@@ -1,0 +1,515 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <meta name="color-scheme" content="light only">
+
+
+  <!-- Favicons -->
+  <link href="{% static 'img/favicon-32x32.png' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex flex-column justify-content-center">
+
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span>Resume</span></a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i><span>Portfolio</span></a></li>
+        
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      <img src="{% static 'img/hero-bg.jpg' %}" alt="">
+
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <h2>Sreedhar <span><a href="{% url 'download_resume' %}" class="btn btn-outline-success btn-sm" target="_blank">Download Resume</a></span> </h2> 
+            <p><span class="typed" data-typed-items="Software Engineer,Web Developer, Python Developer">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://github.com/sreedhar742"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/sreedhar742/"><i class="bi bi-linkedin"></i></a>
+              <a href="https://leetcode.com/u/psridhar621616/"><i class="bi bi-file-earmark-code-fill"></i></a>
+              <a href="mailto:psridhar742@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div>
+      <!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center px-4">
+          <div class="col-lg-4">
+            <img src="{% static 'img/slide.jpg' %}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-5 content">
+            <h2>Software Engineer &amp; Django Developer.</h2>
+            <p class="fst-italic py-3">
+              Enthusiastic and skilled software developer with two years of hands-on coding experience in Python, Django, and full-stack web development. Proficient in creating dynamic web applications and adept at problem-solving and learning new technologies quickly.
+            </p>
+            <div class="row">
+              <div class="col-lg-8">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>(+91) 7569 6301 44</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bengaluru, India</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>22</span></li>
+                  
+                  <li>
+                    <div class="d-flex ">
+                        <i class="bi bi-chevron-right "></i><strong>Degree:</strong>
+                        <div >
+                            <ul class="list-unstyled mb-0 p-0">
+                                <li>B.Tech (Computer Science)</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                  </li>
+                
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>psridhar742@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span><a href="#contact" class="btn btn-outline-success btn-sm">Available</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Technical Skills</h2>
+      </div><!-- End Section Title -->
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content justify-content-center">
+    
+          <!-- Programming Languages -->
+          <div class="col-lg-5">
+            <h4>Programming Languages</h4>
+            <ul class="list-group">
+              <li class="list-group-item">Python</li>
+              <li class="list-group-item">SQL</li>
+              <li class="list-group-item">HTML/CSS</li>
+              <li class="list-group-item">Java (Beginner)</li>
+              <li class="list-group-item">JavaScript</li>
+            </ul>
+          </div>
+    
+          <!-- Frameworks -->
+          <div class="col-lg-5">
+            <h4>Frameworks</h4>
+            <ul class="list-group">
+              <li class="list-group-item">Django</li>
+              <li class="list-group-item">React</li>
+              <li class="list-group-item">Rest Framework</li>
+              <li class="list-group-item">Flask</li>
+              <li class="list-group-item">Pandas</li>
+            </ul>
+          </div>
+    
+          <!-- Developer Tools -->
+          <div class="col-lg-5">
+            <h4>Developer Tools</h4>
+            <ul class="list-group">
+              <li class="list-group-item">Git</li>
+              <li class="list-group-item">Docker</li>
+              <li class="list-group-item">RabbitMQ</li>
+              <li class="list-group-item">VS Code</li>
+              <li class="list-group-item">Excel</li>
+            </ul>
+          </div>
+    
+          <!-- Databases -->
+          <div class="col-lg-5">
+            <h4>Databases</h4>
+            <ul class="list-group">
+              <li class="list-group-item">MySQL</li>
+              <li class="list-group-item">MongoDB</li>
+              <li class="list-group-item">PostgreSQL</li>
+            </ul>
+          </div>
+    
+          <!-- Others -->
+          <div class="col-lg-5">
+            <h4>Academy Knowledge</h4>
+            <ul class="list-group">
+              <li class="list-group-item">OS Concepts</li>
+              <li class="list-group-item">Machine Learning Algorithms</li>
+              <li class="list-group-item">Data Structures and Algorithms</li>
+              <li class="list-group-item">SDLC</li>
+              <li class="list-group-item">Mathematical Models</li>
+            </ul>
+          </div>
+    
+        </div><!-- End Skills Content -->
+    
+        <!-- Additional Information -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Additional Information</h2>
+        </div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <ul class="list-group">
+            <li class="list-group-item"><strong>Certifications:</strong> Microsoft Certified: Azure AI Fundamentals</li>
+            <li class="list-group-item"><strong>Competitive Exams:</strong> TCS NQT-2024 (Score: 79.87)</li>
+            <li class="list-group-item"><strong>Personal Projects:</strong> Portfolio Website, Weather App</li>
+            <li class="list-group-item"><strong>Interests:</strong> Open Source, Backend Development, Data Science, Machine Learning, Artificial Intelligence</li>
+          </ul>
+        </div><!-- End Additional Information -->
+        
+      </div><!-- End Container -->
+    
+    </section><!-- End Skills Section -->
+    
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title " data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>An innovative software developer with a comprehensive skill set in building full-stack applications. 
+          Proficient in creating dynamic front ends with ReactJS and developing robust backends using Python and Django. 
+          Expertise in handling asynchronous tasks with RabbitMQ, and experienced in managing multiple databases such as MySQL and PostgreSQL. 
+          Adept at developing RESTful APIs using Django Rest Framework to create scalable, cross-platform solutions. 
+          Proven ability to integrate these technologies seamlessly for high-performance applications</p>
+      </div><!-- End Section Title -->
+      <section id="resume" class="resume section">
+
+        <div class="container">
+          <div class="row justify-content-center px-4">
+      
+            <!-- Left Column (Summary and Education) -->
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+              
+              <!-- Summary Section -->
+              <h3 class="resume-title">Summary</h3>
+              <div class="resume-item pb-0">
+                <h4>Pedda Pullannagari Sreedhar</h4>
+                <p><em>Proficient in creating developing robust backends using Python and Django. Expertise in handling asynchronous tasks with RabbitMQ and managing databases like MySQL and PostgreSQL. Adept at developing RESTful APIs using Django Rest Framework to create scalable, cross-platform solutions.</em></p>
+                <ul>
+                  <li>Bengaluru,India</li>
+                  <li>(+91) 7569 6301 44</li>
+                  <li>psridhar742@gmail.com</li>
+                </ul>
+              </div><!-- End Resume Item -->
+      
+              <!-- Education Section -->
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Technology (Computer Science and Engineering)</h4>
+                <h5>2020 – 2024</h5>
+                <p><em>JNTUA College of Engineering, Kalikiri, Andhra Pradesh, India</em></p>
+                <ul>
+                  <strong>Subjects:</strong>
+                  <li>Data Structures, Operating Systems, OOP, Computer Networks</li>
+                  <li>DBMS, Machine Learning, Software Engineering</li>
+                  <li>Projects on Django-based web applications and Machine learning Models</li>
+                </ul>
+              </div><!-- End Education Item -->
+      
+              <div class="resume-item">
+                <h4>Higher Secondary Education (MPC)</h4>
+                <h5>2018 – 2020</h5>
+                <p><em>Sri Gayatri Junior College, Kurnool, Andhra Pradesh, India</em></p>
+                <ul>
+                  <li>Mathematics, Physics, Chemistry</li>
+                  <li>Good performance in Maths and Physics</li>
+                </ul>
+              </div><!-- End Education Item -->
+      
+            </div><!-- End Left Column -->
+      
+            <!-- Right Column (Experience) -->
+            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
+      
+              <!-- Professional Experience Section -->
+              <h3 class="resume-title">Remote Experience</h3>
+              
+              <div class="resume-item">
+                <h4>Full Stack Web Development Intern</h4>
+                <h5>Jan 2024 - Apr 2024</h5>
+                <p><em>Slash Mark, India</em></p>
+                <ul>
+                  <li>Developed and maintained Django-based web applications.</li>
+                  <li>Implemented Authentication by sending the Notifications through the email</li>
+                  <li>Implemented REST APIs, Django Signals</li>
+                  <li>Worked with MySQL and PostgreSQL databases</li>
+                  <li>Worked on containerizing the Django application using Docker</li>
+                </ul>
+              </div><!-- End Experience Item -->
+      
+              <div class="resume-item">
+                <h4>Django Intern</h4>
+                <h5>May 2023 – Jul 2023</h5>
+                <p><em>Eduphoneix Solutions, India</em></p>
+                <ul>
+                  <li>Done the project called Feedback system where sites collects the users feedback</li>
+                  <li>Implemented the django orm and models for retrieving the data.</li>
+                  <li>Learned How to connect the different databases to the django applications.</li>
+                  <li>Implemented user Interface using HTML/CSS</li>
+                </ul>
+              </div><!-- End Experience Item -->
+      
+            </div><!-- End Right Column -->
+      
+          </div><!-- End Row -->
+      
+        </div><!-- End Container -->
+      
+      </section><!-- End Resume Section -->
+   <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <p>My projects, from personal to professional, showcase my technical expertise. Explore my work to see how I've turned concepts into real-world applications.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-portfolio">Portfolio</li>
+        <li data-filter=".filter-blogs">Blogs Project</li>
+        <li data-filter=".filter-feedback">Feedback System</li>
+        <li data-filter=".filter-railway">Railway Management System</li>
+      </ul><!-- End Portfolio Filters -->
+
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+        <!-- Portfolio Project -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-portfolio">
+          <img src="{% static 'img/masonry-portfolio/portfoliopic.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Portfolio Website</h4>
+            <p>Django, HTML, CSS, JavaScript</p>
+            <a href="{% static 'img/masonry-portfolio/portfoliopic.png' %}" title="Portfolio Website" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/sreedhar742/portfolio" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            
+          
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <!-- Blogs Project -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-blogs">
+          <img src="{% static 'img/masonry-portfolio/blogpic.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Blogs Project</h4>
+            <p>Django, React, REST APIs</p>
+            <a href="{% static 'img/masonry-portfolio/blogpic.png' %}" title="Blogs Project" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/sreedhar742/Django_IT_Blogs" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Blogs Project -->
+
+        <!-- Feedback System -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-feedback">
+          <img src="{% static 'img/masonry-portfolio/feedbackpic.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Feedback System</h4>
+            <p>Django, JavaScript, MySQL</p>
+            <a href="{% static 'img/masonry-portfolio/feedbackpic.png' %}" title="Feedback System" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/sreedhar742/feedback_system_using_django_framework" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Feedback System -->
+
+        <!-- Railway Management System -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-railway">
+          <img src="{% static 'img/masonry-portfolio/railwaypic.png' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Railway Management System</h4>
+            <p>Django, HTML, JavaScript, MySQL</p>
+            <a href="{% static 'img/masonry-portfolio/railwaypic.png' %}" title="Railway Management System" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+            <a href="https://github.com/sreedhar742/railway_reservation_system" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+          </div>
+        </div><!-- End Railway Management System -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>If you would like to discuss potential projects or collaboration opportunities, feel free to reach out to me. I'm always open to connecting with like-minded professionals and exploring new ventures.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Bengaluru,India</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <a href="tel:+919667712326">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+              </a>
+              <div>
+                <h3>Call</h3>
+                <p>(+91) 7569 6301 44</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <a href="mailto:psridhar742@gmail.com">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+              </a>
+              <div>
+                <h3>Email</h3>
+                <p>psridhar742@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action='/landing.html' method="post" class="contact-me-form" data-aos="fade-up" data-aos-delay="200">
+              {% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/sreedhar742"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/sreedhar742/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://leetcode.com/u/psridhar621616/"><i class="bi bi-file-earmark-code-fill"></i></a>
+        
+      </div>
+      <div class="container">
+        
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
