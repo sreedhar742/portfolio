@@ -21,13 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-+k=t26doc^55mr@_m_nn(r!9_#xqg+b4p+m!66!#0=i=itc=ig'
-SECRET_KEY = os.getenv('SECRET_KEY')
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+SECRET_KEY = 'django-insecure-+k=t26doc^55mr@_m_nn(r!9_#xqg+b4p+m!66!#0=i=itc=ig'
 
-ALLOWED_HOSTS = ['*']
-# ['portfolio-pkpa.onrender.com', 'localhost', '127.0.0.1']
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -137,6 +136,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 RESUME_FILE_PATH = os.path.join(BASE_DIR, 'website/static/resume/resume.pdf')
 
 #This tells Django to trust the X-Forwarded-Proto header for determining whether the request is secure (using HTTPS).
-USE_X_FORWARDED_HOST = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# USE_X_FORWARDED_HOST = True
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
